@@ -1,0 +1,134 @@
+   	 GIT e GITHUB
+
+_____________________________________
+
+Git -> Sistema de Versionamento de arquivos
+_____________________________________
+
+------------------   T  E  O  R  I  A   --------------------------------
+
+Forks -> Uma opção na qual,do código de outra pessoa, para realizar modificações sem alterar
+o código original.
+
+Branch -> A mesma coisa que o Forks, porém com o seu código(também pode ser chamado de ramificação)
+
+Merge -> A Fusão de uma Branch com o Ramo Princial: o "Main"
+
+Commit -> É a publicação do código no repositório local, em língua Git: Commitar
+
+Remote -> É o repositório Remoto, ou da Internet. Antes do cod. ser mandado pro remote, ele permanece no repositório 
+Local
+
+Push -> É mandar o commit Local pro Remote
+
+Pull -> o Contrário do Push
+
+------------------------------------------------------------------------------------------------
+
+			P  R  Á  T  I  C  A
+
+------------------------------------------------------------------------------------------------
+
+****COMANDOS***
+
+git --version -> mostra a versão
+
+git init -> inicializa
+
+git add -> adiciona os arquivos que iram pro commit
+
+git status -> o próprio nome já diz irmão
+
+git commit -m "primeiro commit" -> realizando o primeiro commit
+		(o "m" faz referência a message)
+
+
+git branch -M "main" -> renomear a Branch Principal
+
+CRTL + L = limpa a tela
+
+git remote add origin https://github.com/AprendizadoConta/ProjetoGit.git -> faz a conexão com o repositório remoto
+
+		origin é o nome dado a esse link: https://github.com/AprendizadoConta/ProjetoGit.git, resumindo pode escolher qualquer nome
+		e esse nome escolhido vai ser usado de apelido pro link logo acima
+
+git push -u origin main -> feito o push pro repositório remoto
+		o -u é utilizado, pra fazer a conexão do remote
+
+git add . -> manda todos os arquivos para "espera"
+
+
+git checkout -b "novo-botao" -> cria uma nova branch
+		o -b refere-se a branch
+		o checkout é pra sair da branch atual e ir diretamente pra criada. EXEMPLO: git checkout novo-botao
+
+===========================
+  COMO MUDAMOS DE BRANCH
+ (mudamos também o código)
+===========================
+git push origin novo-botao -> mandou um push pra branch atual
+
+===========================
+  VOLTAMOS PRA BRANCH MAIN
+===========================
+
+git check out main
+
+__________________
+REALIZANDO O MERGE
+__________________
+
+É necessário voltar a branch principal(já fizemos)e digitar o comando merge junto com a branch que você quer juntar:
+
+git merge novo-botao
+
+git push origin main
+
+
+__________________
+REALIZANDO O CLONE
+__________________
+
+o git Clone puxa para sua máquina os arquivos, ou seja, ele vai pro repositório Local
+
+git clone https://github.com/rafaballerini/GitTutorial.git -> Usei este link, para exemplo
+
+__________________
+REALIZANDO O PULL
+__________________
+
+o pull é chamar do diretório remoto, pro local, só abrir na pasta o Git bash
+e por fim:
+
+git pull
+
+__________________
+REALIZANDO O FORK
+__________________
+
+Pode ser feito no Próprio GitHub
+
+__________________
+PULL REQUEST
+__________________
+
+Fiz uma alteração bacana no projeto de alguém, e quero que ela coloque no projeto original dela, nisso, mando um PULL REQUEST
+
+Crio um Fork, do programa que quero, faço a alteração e mando o PULL REQUEST
+
+
+****************
+
+
+
+
+
+
+
+
+
+
+
+MD--- MARKDOWN -> linguagem de marcação
+
+Master --- está na Branch Master/Main
