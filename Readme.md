@@ -23,3 +23,5 @@ git remote add origin https://github.com/AprendizadoConta/ProjetoGit.git
 git push -u origin main
 
                 o -u é utilizado, pois o Git não sabe qual repositório ira usar ainda, então precisamos definí-lo
+
+tive que arrumar        
